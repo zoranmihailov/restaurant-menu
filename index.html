@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/shopCart.css">
+    <link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/darklight.css">
+</head>
+<body>
+<!--header-->
+    <header>
+        <div class="name-theme">
+            <button id="dark-light">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+            </button>
+            <h2>Restaurant</h2>
+        </div>
+        <nav>
+            <div class="navbar">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#reviews">Reviews</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="menu.html">Menu</a>
+            </div>
+            <div class="shop-cart-container">
+                <div class="notification-shop-cart">0</div>
+                <a class="shop-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div id="menu-bar"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <div class="shop-cart-card">
+        <h1>Shopping cart</h1>
+        <ul class="list-shop-cart"></ul>
+        <div class="checkout">
+            <div class="total">0</div>
+            <div class="close">Close</div>
+        </div>
+    </div>
+
+<!--main-->
+    <main>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h2>Welcome to [Restaurant Name]</h2>
+                <p>Welcome to [Restaurant Name], where we celebrate the rich culinary traditions of both Italy and
+                    Macedonia. Our menu offers a unique fusion, blending the soulful flavors of authentic Italian pasta,
+                    comforting tastes of traditional Macedonian dishes. Come savor the best of both worlds, crafted
+                    with passion for a dining experience you won't forget!</p>
+            </div>
+            <div class="image-container">
+                <img src="images/home-img.png" height="600" width="600"/>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <h1>Reviews</h1>
+            <div class="reviews-container">
+                <div class="reviews-content">
+                    <div class="reviews-content-img img1"></div>
+                    <h3>Frederick Thompson </h3>
+                    <div class="reviews-stars stars1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="reviews-grade">5.0</p>
+                    <p class="review-description">"Absolutely delicious food, excellent service, and a lovely
+                        atmosphere. Every dish was full of flavor. We'll definitely be coming back! "</p>
+                </div>
+                <div class="reviews-content">
+                    <div class="reviews-content-img img2"></div>
+                    <h3>Alice Montgomery</h3>
+                    <div class="reviews-stars stars2">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="reviews-grade">4.5</p>
+                    <p class="review-description">"A great spot! The Italian pasta was amazing, and the Macedonian
+                        dishes were rich and comforting. Service was a bit slow at peak time, but the delicious food
+                        and cozy vibe made up for it. Highly recommend!"</p>
+                </div>
+                <div class="reviews-content">
+                    <div class="reviews-content-img img3"></div>
+                    <h3>Edward Phillips</h3>
+                    <div class="reviews-stars stars3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="reviews-grade">4.5</p>
+                    <p class="review-description">"A delightful find! The Italian-Macedonian fusion is unique and
+                        delicious. My tavce gravce was excellent, and the pesto pasta was a hit. Friendly staff and
+                        great service—just wish there were a few more dessert options!"</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <footer class="contact-footer">
+                <h1>Contact Us</h1>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Contact</h2>
+                        <p><i class="fa-solid fa-phone"></i>  +389 78 232 323</p>
+                        <p><i class="fa-solid fa-location-dot"></i>  Кеј 13-ти Ноември, Skopje 1000</p>
+                        <p><i class="fa-solid fa-envelope"></i>  restaurantmenu@gmail.com</p>
+                        <div class="social-media">
+                            <a class="fb" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="ig" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="x" href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-work">
+                        <h2>Opening</h2>
+                        <p class="days">Monday-Sunday</p>
+                        <p>7am-12pm</p>
+                    </div>
+                    <div class="contact-map">
+                        <h2>Location</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d670.8393478168705!2d21.4337491891938!3d41.995844864997025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2smk!4v1752880765050!5m2!1sen!2smk"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <p class="down">RestaurantMenu &#x2022 2025</p>
+            </footer>
+        </section>
+    </main>
+
+
+
+<script src="scripts/index.js"></script>
+<script src="scripts/cart.js"></script>
+<script>
+    loadCartFromLocalStorage();
+</script>
+<script src="scripts/products.js"></script>
+<script src="scripts/dark-mode.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+/*scrollmenu*/
+div.scrollmenu {
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(240, 240, 240);
+    overflow-x: auto;
+    white-space: nowrap;
+    position: fixed;
+    top: 75px;
+    left: 0; right: 0;
+}
+div.scrollmenu a {
+    display: inline-block;
+    color: #333333;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+div.scrollmenu a:hover, .scrollmenu a.active {
+    background-color: royalblue;
+    border-radius: 15px;
+    color: white;
+}
+
+
+/*main*/
+#menu-container{
+    margin: 2rem;
+}
+#menu-container h1{
+    font-size: 3.5rem;
+    padding-left: 3rem;
+    margin-top: 20vh;
+}
+.food-container{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.pojadok-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: start;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(117, 118, 118, 0.4);
+}
+.pojadok-item:hover {
+    box-shadow: 0 20px 30px rgba(117, 118, 118, 0.7);
+}
+.name{
+    font-size: 2rem;
+    height: 3rem;
+}
+.pojadok-item-text{
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.sostojki{
+    margin-top: 2rem;
+    height: 4rem;
+}
+.cena{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.pojadok-item-img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    background-color: white;
+}
+.pojadok-item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.bezalkoholni .pojadok-item-img img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.pojadok-item-img img:hover{
+    height: 104%;
+}
+
+.pojadok-item button{
+    width:50%;
+    height: 3rem;
+    background-color: gold;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.pojadok-item button:hover{
+    width: 55%;
+    background-color: #d3b30d;
+    cursor: pointer;
+}
+.food-container h2{
+    display: block;
+    width: 100%;
+    grid-column: 1/-1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+
+
+
+/*vegetarian button*/
+.vegetarian-container{
+    position: fixed;
+    top:19%;
+    left:1rem;
+    z-index: 1000;
+    border-radius: 50%;
+}
+#vegetarian-button{
+    width:3.5rem;
+    height:3.5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: lawngreen;
+    cursor: pointer;
+    text-align: center;
+}
+#vegetarian-button.active{
+    background-color: darkgreen;
+}
+.vege-description{
+    visibility: hidden;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 8px;
+    position: absolute;
+    top: 20%;
+    left: 110%;
+    opacity: 0;
+    white-space: nowrap;
+}
+.vegetarian-container:hover .vege-description{
+    visibility: visible;
+    opacity: 1;
+}
+
+.pojadok-item.vegetarian-js{
+    background-color: forestgreen !important;
+    color: white;
+}
+
+
+/*sort*/
+.title-container h1{
+    margin-right: 3rem;
+}
+.title-container {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sort-button {
+    padding: 4px 8px;
+    font-size: 1.5rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 8rem;
+}
+
+.sort-button:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1250px){
+    .food-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width:1176px){
+    .food-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 991px){
+
+    div.scrollmenu {
+        position: fixed;
+        top: 66px; left: 0; right: 0;
+    }
+
+}
+
+@media (max-width:768px){
+
+    div.scrollmenu{
+        position:fixed;
+        top:10.9vh;
+        height: 5vh;
+    }
+
+
+    .vegetarian-container{
+        position: fixed;
+        top:20vh;
+        left:1rem;
+    }
+
+
+/*    sort*/
+    .title-container h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .title-container .sort-button{
+        font-size: 1rem;
+        width: 6rem;
+        text-wrap: nowrap;
+    }
+
+}
+@media(max-width:722px){
+
+}
+@media(max-width:600px){
+    .food-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:520px){
+    .pojadok-item button{
+        height:4rem;
+    }
+
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 50%;
+    }
+}

@@ -1,0 +1,192 @@
+/*-----------main-------------*/
+/*home-section*/
+section{
+    padding: 2rem 9%;
+    min-height: 100vh;
+}
+section:last-child{
+    padding: 0;
+    min-height: 0;
+}
+.home-section{
+    margin-top: 5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.home-content{
+    display: inline-block;
+}
+.home-content h2{
+    font-size: 4rem;
+}
+.home-content p{
+    font-size: 2rem;
+    color: #333333;
+}
+.image-container img{
+    width:50rem;
+    height:50rem;
+}
+
+/*reviews-section*/
+.reviews-section{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.reviews-section h1{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.reviews-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.reviews-content{
+    width: 40rem;
+    height: 50rem;
+    border: 3px solid black;
+    border-radius: 2rem;
+    background-color: white;
+}
+.reviews-content p{
+    font-size: 1.5rem;
+    padding: 1.3rem;
+}
+.reviews-content .reviews-content-img{
+    width: 100%;
+    height: 50%;
+}
+.reviews-content-img{
+    background-size: cover;
+    border-radius: 2rem 2rem 0 0;
+    background-repeat: no-repeat;
+    background-position: 0 -30px;
+}
+.img1{
+    background-image: url("../images/frederick.jpg");
+}
+.img2{
+    background-image: url("../images/alice.jpg");
+}
+.img3{
+    background-image: url("../images/edward.jpg");
+}
+.reviews-content h3{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    padding: 1.3rem;
+}
+.reviews-stars{
+    display: inline-block;
+    height: 2rem;
+    width: 60%;
+}
+.stars1,.stars2,.stars3{
+    padding: 1.3rem;
+    font-size: 2rem;
+}
+.reviews-content .reviews-grade{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+
+/*contact-section*/
+footer{
+    background-color: #333333;
+    color: #dddddd;
+    padding: 2rem;
+    box-shadow: 0 -1rem 1rem rgba(0,0,0,0.5);
+}
+.contact-footer h1{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.contact-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.contact-container h2{
+    font-size: 2.5rem;
+    text-decoration: underline gold;
+    margin-bottom: 1rem;
+}
+.contact-container p{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.social-media{
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+}
+.social-media a{
+    text-decoration: none;
+    color: #dddddd;
+}
+.fb:hover{
+    color: royalblue;
+}
+.ig:hover{
+    color: yellow;
+}
+.x:hover{
+    color:black;
+}
+.contact-container .days{
+    font-size: 2rem;
+}
+
+.down{
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1150px){
+    .reviews-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 991px){
+    .home-section{
+        margin-top: 7rem;
+        flex-wrap: wrap;
+    }
+
+    .reviews-container{
+        flex-wrap: wrap;
+    }
+    .reviews-content p{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 50%;
+    }
+}

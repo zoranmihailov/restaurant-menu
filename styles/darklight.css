@@ -1,0 +1,74 @@
+#dark-light{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    background-color: #b6b5b5;
+    cursor: pointer;
+}
+#dark-light svg:first-child{
+    display: none;
+}
+.dark-mode #dark-light svg:last-child{
+    display: none;
+}
+.dark-mode #dark-light svg:first-child{
+    display: block;
+}
+
+.dark-mode{
+    background-color: #191919 !important;
+    color: white !important;
+}
+.dark-mode .reviews-content{
+    background-color: #2b2a2a;
+}
+.dark-mode .home-content p{
+    color: white !important;
+}
+.dark-mode header{
+    background-color: #2b2a2a !important;
+    color: white !important;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.3);
+}
+.dark-mode .navbar a{
+    color: white !important;
+}
+.dark-mode .shop-cart{
+    color: white;
+}
+.dark-mode .shop-cart:hover{
+    color: gold;
+}
+
+/*menu-del*/
+.dark-mode .pojadok-item{
+    background-color: #2b2a2a;
+}
+
+.dark-mode div.scrollmenu{
+    background-color: #2b2a2a;
+}
+.dark-mode div.scrollmenu a{
+    color: white;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .dark-mode header .navbar a{
+        color:#333333 !important;
+    }
+    .dark-mode #menu-bar{
+        color: white;
+    }
+    .dark-mode #menu-bar.yellow{
+        color: gold;
+    }
+}
