@@ -1,0 +1,128 @@
+.shop-cart-card{
+    width: 35%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:100%;
+    background-color: #d8d2d2;
+    z-index: 1001;
+    box-shadow: -1rem 0.5rem 1rem rgba(0,0,0,0.2);
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+}
+.shop-cart-card h1{
+    font-size: 3rem;
+    color: #d3b30d;
+    margin: 2rem;
+    height:8rem;
+}
+.shop-cart-card .checkout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+.shop-cart-card .checkout div{
+    background: #d3b30d;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.shop-cart-card .checkout .close{
+    background: black;
+    color: white;
+}
+.shop-cart-card .checkout .close:hover{
+    background: #191919;
+}
+.active .shop-cart-card{
+    left: 65%;
+}
+
+.list-shop-cart{
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 0 0 6rem;
+}
+.list-shop-cart li{
+    display:grid;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    row-gap: 2rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+.list-shop-cart li div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-shop-cart li div img{
+    width: 100%;
+    height: 90px;
+    border-radius: 5px;
+}
+.shop-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.shop-price{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.qty-controls-mid{
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media(max-width:1150px){
+    .shop-cart-card{
+        width: 50%;
+    }
+    .active .shop-cart-card{
+        left: 50%;
+    }
+}
+
+@media(max-width: 991px){
+    .shop-cart-card h1{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    .shop-cart-card{
+        width: 100%;
+    }
+    .active .shop-cart-card{
+        left: 0;
+    }
+}
+
+@media(max-width:520px){
+
+}
+
+@media(max-width: 400px){
+
+}

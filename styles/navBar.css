@@ -1,0 +1,157 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 13rem;
+}
+body{
+    background: #dddddd;
+}
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+    background: rgb(240, 240, 240);
+    padding: 2rem 9%;
+}
+.name-theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h2{
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
+}
+.navbar{
+    display:inline-block;
+}
+header nav a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #333333;
+    cursor: pointer;
+}
+header .navbar a:hover{
+    color: white;
+    padding:1rem;
+    background-color: #333333;
+    border-radius: 1rem;
+}
+.shop-cart-container{
+    display: inline-block;
+    position: relative;
+}
+.notification-shop-cart{
+    position: absolute;
+    top: -8px; left: 44px;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop-cart{
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
+}
+.shop-cart:hover{
+    color: gold;
+}
+#menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #333333;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    #menu-bar{
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        scroll-padding-top: 17vh;
+    }
+    header{
+        height: 11vh;
+        min-height: 50px;
+    }
+    #menu-bar{
+        display: initial;
+        margin-left: 2rem;
+    }
+    #menu-bar.yellow{
+        color: gold;
+    }
+    .shop-cart{
+        font-size: 3rem;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background-color: rgb(220, 220, 220);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        margin:1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border:.2rem solid rgba(0,0,0,0.1);
+        border-left:.5rem solid gold;
+    }
+
+
+
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 50%;
+    }
+}
